@@ -1,0 +1,16 @@
+{
+    
+    "type": "mysql",
+    "host": "localhost",
+    "port":3306,
+    "username": "root",
+    "database": "testedb",
+    "migrations": ["./src/database/migration/*.ts"],
+    "entities":["./src/models/*.ts"],
+    "logging": true,
+    "cli":{
+        "entitiesDir": "./src/models/",
+        "migrationsDir": "./src/database/migration"
+    }
+}
+
